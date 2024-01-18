@@ -40,7 +40,7 @@ const handleDelete = ( index ) => {
             </form>
             <ul className='flex flex-col flex-wrap gap-5 w-[400px]'>
                 {todos.map((todo, index) =>(
-                    <div className="w-full py-2 bg-white rounded-xl  text-[#0e1111] px-3 flex justify-between align-middle">
+                    <div className="w-full py-2 bg-white rounded-xl  text-[#0e1111] px-3 flex justify-between align-middle" key={index}>
                     <li className='bg-white rounded-xl w-full text-[#0e1111] flex my-auto' key={index}>{todo}
                     </li>
                     <div>
